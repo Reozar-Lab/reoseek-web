@@ -2,7 +2,7 @@ name = "reodeep-web"
 main = "worker.js"
 compatibility_date = "2026-11-22"
 
-# 静态资源托管 (官方 Demo 打包后的前端 dist)
+# 静态资源托管
 [assets]
 directory = "./dist"
 binding = "ASSETS"
@@ -17,14 +17,15 @@ database_id = "aac4f241-97e3-4e1b-99ba-f33151f68b4f"
 binding = "KV"
 id = "3d0b29a79cb849359a8b6878df5624a5"
 
-
-# 自定义域名
+# 自定义主域名 (网关)
 [custom_domain]
 domain = "reoseek.de5.net"
 
 # 环境变量
- [vars]
-# 准入码，前端输入这个才能用
+[vars]
+# 准入码
 ACCESS_CODE = "292125"
+# 跳转的子域名地址
+CHAT_DOMAIN = "https://chat.reoseek.de5.net"
 
-# DEEPSEEK_API_KEY 请使用 wrangler secret put 命令配置！
+# DEEPSEEK_API_KEY 请在 CF 控制台配置
