@@ -12,14 +12,19 @@ binding = "ASSETS"
 binding = "DB"
 database_id = "aac4f241-97e3-4e1b-99ba-f33151f68b4f"
 
+# KV缓存
+[[kv_namespaces]]
+binding = "KV"
+id = "3d0b29a79cb849359a8b6878df5624a5"
+
 
 # 自定义域名
 [custom_domain]
 domain = "reoseek.de5.net"
 
 # 环境变量
-# [vars]
+ [vars]
 # 准入码，前端输入这个才能用
-# ACCESS_CODE = "secarea2026"
+ACCESS_CODE = "292125"
 
 # DEEPSEEK_API_KEY 请使用 wrangler secret put 命令配置！
